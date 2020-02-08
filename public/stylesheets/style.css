@@ -1,17 +1,14 @@
-body {
-  height: 100vh;
-  width: 100vw;
-  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
-}
-
-a {
-  color: #00B7FF;
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 #circles {
-  height: 100%;
   width: 100%;
-  border: 2px solid gold;
+  height: 100%;
 }
 
 #circles div {
@@ -37,4 +34,22 @@ header button {
   color: white;
   border-style: none;
   border-radius: 4px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  font: 12px Arial;
+  color: white;
+  border-radius: 4px;
+  background-color: gray;
+  padding: 4px;
+  margin-right: 5px;
 }

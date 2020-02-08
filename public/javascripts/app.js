@@ -14,7 +14,16 @@ socket.on('clear', function(data) {
 
 
 const circles = document.getElementById('circles');
+const users = document.getElementById('users');
+
 let initials = prompt('Enter your Initials');
+
+socket.emit('register-user',initials);
+
+socket.on('update-user-list', function (data) {
+    var userList = '<li>' + data.join('</li><li>') + '</li>';
+    users.innerHTML = userList;
+});
 
 circles.addEventListener('click', function(event) {
     //this.style.backgroundColor = 'red';
